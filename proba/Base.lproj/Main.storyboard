@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="proba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" highlightedImage="Image" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-FC-CmX">
+                                <rect key="frame" x="-453" y="-113" width="1280" height="853"/>
+                            </imageView>
+                            <label autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8H5-gg-cbD">
+                                <rect key="frame" x="8" y="154" width="359" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.87866755431111587" blue="0.8365784495266031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="My Spots">
+                                        <attributes>
+                                            <font key="NSFont" size="31" name="Chalkduster"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="1" green="0.40276160451842369" blue="0.29530009135335167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="1" green="0.11848859339999999" blue="0.42764746059999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="54" placeholderIntrinsicHeight="63" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxc-SA-a26">
+                                <rect key="frame" x="142" y="66" width="91" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="safeArea" id="HVO-fB-Aa2"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="контакты">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="PTMono-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="highlighted">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" контакты">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="PTSans-CaptionBold"/>
+                                                <font key="NSOriginalFont" size="21" name="PTSans-CaptionBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="Buttom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="13q-Yw-HoI"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HuP-Fe-dOQ">
+                                <rect key="frame" x="136" y="605" width="103" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="begin">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iDo-WN-zf8" kind="show" id="Vmy-5R-bO0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0oc-FC-CmX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="MMu-Oi-Eqx"/>
+                            <constraint firstItem="0oc-FC-CmX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zJe-FC-8GW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="90x-jV-XNA"/>
+                    <connections>
+                        <outlet property="myLabel" destination="8H5-gg-cbD" id="PvA-Fj-9Hi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--My Map View Controller-->
+        <scene sceneID="8b2-E1-Iyc">
+            <objects>
+                <viewController id="n5C-7a-8Bv" customClass="MyMapViewController" customModule="proba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mtm-RP-DEc" customClass="MKMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-VO-sUQ">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iDo-WN-zf8" kind="show" id="TiO-Cc-L0g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1le-oX-90s">
+                                <rect key="frame" x="258" y="20" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                                <state key="normal" title="add pin">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addpinn:" destination="n5C-7a-8Bv" eventType="touchUpInside" id="niC-eu-KAU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                        </accessibility>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="Ff4-xf-ks5" userLabel="I"/>
+                    </view>
+                    <connections>
+                        <outlet property="Button" destination="bx3-VO-sUQ" id="tbD-v8-02F"/>
+                        <outlet property="MyMap" destination="Mtm-RP-DEc" id="WlQ-rV-CdC"/>
+                        <outlet property="add" destination="1le-oX-90s" id="Pqq-Th-hWN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MM8-ys-7KR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="810.94452773613204"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="gjH-gc-M3w">
+            <objects>
+                <viewController id="iDo-WN-zf8" customClass="ViewController2" customModule="proba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" semanticContentAttribute="playback" id="UlZ-Hp-rJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8w-5q-STp">
+                                <rect key="frame" x="146" y="485" width="83" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Назад"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="3nk-R9-DpU">
+                                        <segue key="commit" inheritsFrom="parent" id="LP3-BW-wnF"/>
+                                        <segue key="preview" inheritsFrom="commit" id="T1d-0m-SWi"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label autoresizesSubviews="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PZ-Qq-kir">
+                                <rect key="frame" x="55.5" y="276" width="264" height="79"/>
+                                <color key="backgroundColor" red="0.89328346523696456" green="0.83993806315239739" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7PZ-Qq-kir" secondAttribute="height" multiplier="264:79" id="U6h-L0-oev"/>
+                                    <constraint firstAttribute="height" constant="79" id="WQy-cn-YYM"/>
+                                    <constraint firstAttribute="width" constant="264" id="ucC-vN-qV5"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="U6h-L0-oev"/>
+                                        <exclude reference="WQy-cn-YYM"/>
+                                        <exclude reference="ucC-vN-qV5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <attributedString key="attributedText">
+                                        <fragment content="На карте ваша локация">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <mask key="constraints">
+                                        <include reference="U6h-L0-oev"/>
+                                        <include reference="WQy-cn-YYM"/>
+                                        <include reference="ucC-vN-qV5"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" mapType="hybridFlyover" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WkA-MA-vo3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0va-4G-TLJ">
+                                <rect key="frame" x="114" y="400" width="146" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" spot map">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="30"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="n5C-7a-8Bv" kind="show" id="Psi-5F-xMA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstItem="7PZ-Qq-kir" firstAttribute="centerX" secondItem="UlZ-Hp-rJ4" secondAttribute="centerX" id="7Hg-XS-Qmx"/>
+                            <constraint firstItem="I8w-5q-STp" firstAttribute="centerX" secondItem="UlZ-Hp-rJ4" secondAttribute="centerX" id="8Iq-kf-fUg"/>
+                            <constraint firstItem="I8w-5q-STp" firstAttribute="centerY" secondItem="UlZ-Hp-rJ4" secondAttribute="centerY" constant="175" id="itq-9M-oMY"/>
+                            <constraint firstItem="7PZ-Qq-kir" firstAttribute="centerY" secondItem="UlZ-Hp-rJ4" secondAttribute="centerY" constant="-18" id="rVg-Wl-oFF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WGb-rY-oTd"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="I8w-5q-STp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7Hg-XS-Qmx"/>
+                                <exclude reference="8Iq-kf-fUg"/>
+                                <exclude reference="itq-9M-oMY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="I8w-5q-STp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7Hg-XS-Qmx"/>
+                                <include reference="8Iq-kf-fUg"/>
+                                <include reference="itq-9M-oMY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Un7-FG-8Mr"/>
+                    <connections>
+                        <outlet property="label" destination="7PZ-Qq-kir" id="1ir-4n-ECF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPL-di-Qd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.20000000000005" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="1280" height="853"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vmy-5R-bO0"/>
+        <segue reference="3nk-R9-DpU"/>
+    </inferredMetricsTieBreakers>
+</document>
